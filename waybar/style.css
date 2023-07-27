@@ -21,13 +21,13 @@ tooltip {
     border-color: #11111b;
 }
 
-#workspaces button {
+workspaces button {
     padding: 5px;
     color: #88befc;
     margin-right: 5px;
 }
 
-#workspaces button.active {
+workspaces button.active {
     color: #88befc;
 }
 
@@ -37,13 +37,13 @@ workspaces button.focused {
     border-radius: 10px;
 }
 
-#workspaces button.urgent {
+workspaces button.urgent {
     color: #88befc;
     background: #a6e3a1;
     border-radius: 10px;
 }
 
-#workspaces button:hover {
+workspaces button:hover {
     background: #11111b;
     color: #88befc;
     border-radius: 10px;
@@ -53,6 +53,8 @@ workspaces button.focused {
 #custom-updates,
 #custom-caffeine,
 #custom-weather,
+#custom-screenshot,
+#custom-clipboard_manager,
 #window,
 #clock,
 #battery,
@@ -77,7 +79,7 @@ workspaces button.focused {
     margin-right: 10px;
 }
 
-#workspaces {
+workspaces {
     background: #1e1e2e;
     border-radius: 10px;
     margin-left: 10px;

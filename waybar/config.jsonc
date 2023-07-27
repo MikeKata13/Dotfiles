@@ -8,8 +8,8 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "custom/weather"
-        //"wlr/workspaces"
+        "custom/weather",
+        "wlr/workspaces"
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
@@ -18,6 +18,8 @@
         //"custom/updates",
         //"custom/language",
         "battery",
+	"custom/screenshot",
+	//"custom/clipboard_manager",
         "backlight",
         "pulseaudio",
         "pulseaudio#microphone"
@@ -27,7 +29,7 @@
         "format": "{}"
     },
     "wlr/workspaces": {
-        "disable-scroll": true,
+        "disable-scroll": false,
         "all-outputs": true,
         "on-click": "activate",
         "format": "{icon}",
@@ -124,5 +126,21 @@
 	    "spotify":"󰋄",
             "default":"󰋄"
 	}
+    },
+    "custom/screenshot":{
+	"format": "{icon} {}",
+	"format-icons": "󰄀",
+	"tooltip": "Screenshot",
+	"on-click": "grimshot save area",
+	"on-righ-click": "grimshot copy area",
+	"interval": 3600
+    },
+    "custom/clipboard_manager":{
+	"format": "{icon}",
+	"format-icons": "󰅇",
+	"tooltip": "Clipboard",
+	//"on-click": "clipman show-history wofi",
+	"on-click": "clipman pick -t wofi",
+	"interval": 10
     }
 }   
